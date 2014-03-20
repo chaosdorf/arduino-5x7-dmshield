@@ -9,7 +9,9 @@ If you have a USBASP:
 
 # License
 
-See license.txt
+For the .c and .h files in all directories, see license.txt
+
+For the doc directory, see doc/license.txt
 
 # Credit
 
