@@ -7,13 +7,13 @@ PRG_TARGET 	= m328p
 #optimize for size
 OPTIMIZE       = -Os
 
-FLASHCMD	= avrdude -c usbasp -v -p $(PRG_TARGET) -U lfuse:w:0xe2:m
-FLASHCMD	+= -U hfuse:w:0xd9:m -U efuse:w:0x07:m -U flash:w:$(PRG).hex
+FLASHCMD	= avrdude -c usbasp -v -p $(PRG_TARGET) -U lfuse:w:0xff:m
+FLASHCMD	+= -U hfuse:w:0xd2:m -U efuse:w:0x07:m -U flash:w:$(PRG).hex
 FLASHEEPROMCMD	= avrdude -c usbasp -v -p $(PRG_TARGET) -U eeprom:w:$(PRG)_eeprom.hex
 
 SERIAL = /dev/ttyUSB0
 
-DEFS           = -DF_CPU=8000000
+DEFS           = -DF_CPU=16000000
 
 # You should not have to change anything below here.
 

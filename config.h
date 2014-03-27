@@ -35,7 +35,7 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 
 // processor clock frequency
 #ifndef F_CPU
-#define F_CPU		8000000
+#define F_CPU		16000000
 #endif
 
 // timing
@@ -69,6 +69,7 @@ Disclaimer:			This software is provided by the copyright holder "as is" and any
 //		0x9D = long space (5+1 columns), may be used as the last frame of an animation
 const uint8_t messages[MSG_SIZE] EEMEM = {
 	0x53, ' ', 'H', 'a', 'c', 'k', ' ', 'y', 'o', 'u', 'r', ' ', 's', 'c', 'h', 'o', 'o', 'l', 0x9d, 0x00,
+	0x53, ' ', 'T', 'e', 'l', 'e', 'o', '-', 'c', 0x9d, 0x00,
 	0x64, ' ', 'I', ' ', '^', 'R', ' ', 'C', 'h', 'a', 'o', 's', 'd', 'o', 'r', 'f', 0x9D, 0x00,
 	0xC4, 0x8B, ' ', 0x8C, ' ', 0x8E, ' ', 0x8D, 0x00,							// Monster
 	0x0B, 0xA3, ' ', 0xA5, ' ', 0xA6, ' ', 0xA0, ' ', 0x00,						// break-dance
